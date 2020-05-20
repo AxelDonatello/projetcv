@@ -1,0 +1,206 @@
+@media screen and (max-width: 480px)
+{
+	header
+	{
+		color: red;
+	}
+	body
+	{
+		display: block;
+		flex-direction: column;
+		
+	}
+	.droite
+	{
+		padding-left: 2px;
+
+	}
+	aside
+	{
+
+	}
+}
+
+@font-face
+{
+		font-family: bellota;
+		src: url('webfont/bellota_bold_macroman/Bellota-Bold-webfont.woff');
+		src: url('webfont/bellota_regular_macroman/Bellota-Regular-webfont.woff');
+}
+body
+{
+	display: flex;
+	background-image: url("#");
+	font-family: bellota;
+	font-size: 14px;
+	color: black;
+	margin: auto;
+	height: 1180px;
+}
+h1
+{
+	text-align: left;
+	padding-left: 0px;
+	/*text-shadow: 2px 2px 4px black;*/
+	font-size: 40px;
+	line-height: 30px;
+}
+aside
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 10px;
+	/*overflow: auto;*/
+	background-color: rgb(240, 207, 19);
+	height: 1170px;
+	min-width: 200px;
+	width: 200px;
+	margin-right: 20px;
+	order: 1;
+}
+aside h2
+{
+	text-decoration: none;
+	background-color: rgb(57,57,57);
+	color: rgb(240, 207, 19);
+	text-align: center;
+}
+article
+{
+	border-top: solid rgb(240, 207, 19);
+}
+
+td
+{
+	width: 500px;
+	min-width: 200px;
+	vertical-align: top;
+}
+ul
+{
+	color: rgb(240, 207, 19);
+}
+
+.puce
+{
+	list-style: url(images/dot-circle-regular.svg);
+}
+.souligne
+{
+	text-decoration: underline rgb(240, 207, 19); 
+}
+.job
+{
+	font-size: 17px; 
+}
+.droite h2
+{
+	font-size : 20px;
+	text-align: left;
+	
+}
+
+.droite
+{
+	/*position: absolute;*/
+  min-width: 650px;
+  width: 700px;
+  order: 2;
+
+}
+
+.contact
+{
+ text-align: justify;
+ padding-left: 20px;
+ font-size: 12px;
+}
+.propos
+{
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 290px;
+	font-size: 12px;
+}
+
+.photo
+{
+border-radius: 50px 50px 50px 50px;
+margin-left: 55px;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+
+.firstname
+{
+	color: rgb(240, 207, 19);
+	text-decoration: none;
+	font-size: 40px;
+}
+
+.foot
+{
+	width: 80%;
+	height: 80%;
+	border: solid 1.5px black;
+	border-radius: 50px;
+}
+.muscu
+{
+	width: 80%;
+	height: 80%;
+	border: solid 1.5px black;
+	border-radius: 50px;
+}
+.xbox
+{
+	width: 80%;
+	height: 80%;
+	border: solid 1.5px black;
+	border-radius: 50px;
+}
+.formation 
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+
+}
+.experience
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+.recommandation
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+.LR
+{
+	color: black;
+}
+.reco
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.reco2
+{
+	min-width: 200px;
+	padding-top: 10px;
+
+}
+.loisirs
+{
+	display: flex;
+}
+.mentor
+{
+	font-weight: bold;
+}
