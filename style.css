@@ -6,18 +6,18 @@
 	}
 	body
 	{
-		display: block;
+		display: flex;
 		flex-direction: column;
-		
+		width: 100%;
 	}
 	.droite
 	{
 		padding-left: 2px;
-
+		
 	}
-	aside
+	.gauche
 	{
-
+	
 	}
 }
 
@@ -35,7 +35,6 @@ body
 	font-size: 14px;
 	color: black;
 	margin: auto;
-	height: 1180px;
 }
 h1
 {
@@ -45,20 +44,21 @@ h1
 	font-size: 40px;
 	line-height: 30px;
 }
-aside
+.gauche
 {
 	display: flex;
 	flex-direction: column;
 	font-size: 10px;
 	/*overflow: auto;*/
 	background-color: rgb(240, 207, 19);
-	height: 1170px;
-	min-width: 200px;
+	height: 1080px;
+	/*min-width: 200px;*/
 	width: 200px;
-	margin-right: 20px;
 	order: 1;
+	/*flex: 0.5;*/
+
 }
-aside h2
+.gauche h2
 {
 	text-decoration: none;
 	background-color: rgb(57,57,57);
@@ -68,11 +68,12 @@ aside h2
 article
 {
 	border-top: solid rgb(240, 207, 19);
+	width: 750px;
 }
 
 td
 {
-	width: 500px;
+	width: 400px;
 	min-width: 200px;
 	vertical-align: top;
 }
@@ -102,11 +103,11 @@ ul
 
 .droite
 {
-	/*position: absolute;*/
-  min-width: 650px;
+  /*min-width: 650px;*/
   width: 700px;
   order: 2;
-
+  padding-left: 20px;
+  /*flex: 5;*/
 }
 
 .contact
@@ -120,16 +121,20 @@ ul
 	text-align: justify;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 290px;
+	padding-bottom: 220px;
 	font-size: 12px;
+}
+.divphoto
+{
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 
 .photo
 {
-border-radius: 50px 50px 50px 50px;
-margin-left: 55px;
-margin-top: 10px;
-margin-bottom: 15px;
+	border-radius: 50px 50px 50px 50px;
 }
 
 .firstname
