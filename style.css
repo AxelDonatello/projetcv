@@ -1,23 +1,34 @@
-@media screen and (max-width: 480px)
+@media screen and (max-width: 500px)
 {
-	header
-	{
-		color: red;
-	}
-	body
+	main
 	{
 		display: flex;
 		flex-direction: column;
-		width: 100%;
 	}
-	.droite
+	header h1
 	{
-		padding-left: 2px;
-		
+		width: 700px;
+		text-align: center;
+	}
+	.contact p
+	{
+		font-size: 16px;
+	}
+	.propos p
+	{
+		font-size: 16px;
+	}
+	.droite article
+	{
+		width: 700px;
+	}
+	.droite td
+	{
+		width: 400px;
 	}
 	.gauche
 	{
-	
+		width: 700px;
 	}
 }
 
@@ -27,15 +38,25 @@
 		src: url('webfont/bellota_bold_macroman/Bellota-Bold-webfont.woff');
 		src: url('webfont/bellota_regular_macroman/Bellota-Regular-webfont.woff');
 }
+
 body
+{
+	margin: 0;
+}
+
+main
 {
 	display: flex;
 	background-image: url("#");
 	font-family: bellota;
 	font-size: 14px;
 	color: black;
-	margin: auto;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	border: solid 1px black;
 }
+
 h1
 {
 	text-align: left;
@@ -44,20 +65,39 @@ h1
 	font-size: 40px;
 	line-height: 30px;
 }
+
+article
+{
+	border-top: solid rgb(240, 207, 19);
+	width: 500px;
+}
+
+td
+{
+	width: 250px;
+	min-width: 200px;
+	vertical-align: top;
+}
+
+ul
+{
+	color: rgb(240, 207, 19);
+}
 .gauche
 {
 	display: flex;
 	flex-direction: column;
 	font-size: 10px;
-	/*overflow: auto;*/
 	background-color: rgb(240, 207, 19);
-	height: 1080px;
-	/*min-width: 200px;*/
-	width: 200px;
+	margin-right: 5px;
+	/*height: 1080px;
+	min-width: 200px;
+	width: 200px;*/
 	order: 1;
-	/*flex: 0.5;*/
+	flex: 0.5;
 
 }
+
 .gauche h2
 {
 	text-decoration: none;
@@ -65,35 +105,7 @@ h1
 	color: rgb(240, 207, 19);
 	text-align: center;
 }
-article
-{
-	border-top: solid rgb(240, 207, 19);
-	width: 750px;
-}
 
-td
-{
-	width: 400px;
-	min-width: 200px;
-	vertical-align: top;
-}
-ul
-{
-	color: rgb(240, 207, 19);
-}
-
-.puce
-{
-	list-style: url(images/dot-circle-regular.svg);
-}
-.souligne
-{
-	text-decoration: underline rgb(240, 207, 19); 
-}
-.job
-{
-	font-size: 17px; 
-}
 .droite h2
 {
 	font-size : 20px;
@@ -103,11 +115,26 @@ ul
 
 .droite
 {
-  /*min-width: 650px;*/
-  width: 700px;
+  display: block;
+  /*min-width: 650px;
+  width: 700px;*/
   order: 2;
-  padding-left: 20px;
-  /*flex: 5;*/
+  flex: 5;
+}
+
+.puce
+{
+	list-style: url(images/dot-circle-regular.svg);
+}
+
+.souligne
+{
+	text-decoration: underline rgb(240, 207, 19); 
+}
+
+.job
+{
+	font-size: 17px; 
 }
 
 .contact
@@ -116,6 +143,7 @@ ul
  padding-left: 20px;
  font-size: 12px;
 }
+
 .propos
 {
 	text-align: justify;
@@ -124,6 +152,7 @@ ul
 	padding-bottom: 220px;
 	font-size: 12px;
 }
+
 .divphoto
 {
 	margin-right: auto;
@@ -151,6 +180,7 @@ ul
 	border: solid 1.5px black;
 	border-radius: 50px;
 }
+
 .muscu
 {
 	width: 80%;
@@ -158,6 +188,7 @@ ul
 	border: solid 1.5px black;
 	border-radius: 50px;
 }
+
 .xbox
 {
 	width: 80%;
@@ -165,6 +196,7 @@ ul
 	border: solid 1.5px black;
 	border-radius: 50px;
 }
+
 .formation 
 {
 	width: 30px;
@@ -172,22 +204,26 @@ ul
 	margin-right: 20px;
 
 }
+
 .experience
 {
 	width: 30px;
 	height: 30px;
 	margin-right: 20px;
 }
+
 .recommandation
 {
 	width: 30px;
 	height: 30px;
 	margin-right: 20px;
 }
+
 .LR
 {
 	color: black;
 }
+
 .reco
 {
 	display: flex;
@@ -199,13 +235,16 @@ ul
 {
 	min-width: 200px;
 	padding-top: 10px;
-
+	line-height: 15px;
 }
+
 .loisirs
 {
 	display: flex;
+	justify-content: space-around;
 }
+
 .mentor
 {
-	font-weight: bold;
+	margin-bottom: 0px;
 }
