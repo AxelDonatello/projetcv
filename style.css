@@ -7,28 +7,52 @@
 	}
 	header h1
 	{
-		width: 700px;
 		text-align: center;
+		font-size: 70px;
 	}
-	.contact p
+	.firstname
 	{
-		font-size: 16px;
+		font-size: 70px !important;
 	}
-	.propos p
+	.job
 	{
-		font-size: 16px;
-	}
-	.droite article
-	{
-		width: 700px;
-	}
-	.droite td
-	{
-		width: 400px;
+		font-size: 30px !important;
 	}
 	.gauche
 	{
-		width: 700px;
+		margin-right: 0px !important;
+		width: 100% !important;
+		font-size: 30px !important;
+	}
+	.photo
+	{
+		width: 200px !important;
+		height: 200px !important;
+	}
+	.contact
+	{
+		line-height: 25px !important;
+	}
+	.foot
+	{
+		width: 80px !important;
+		height: 80px !important; 
+	}
+	.muscu
+	{
+		width: 80px !important;
+		height: 80px !important; 
+	}
+	.xbox
+	{
+		width: 80px !important;
+		height: 80px !important; 
+	}
+	.droite
+	{
+		width: 100% !important;
+		font-size: 25px !important;
+		padding-left: 2px;
 	}
 }
 
@@ -48,33 +72,30 @@ main
 {
 	display: flex;
 	background-image: url("#");
-	font-family: bellota;
-	font-size: 14px;
+	font-family: bellota, Arial, sans-serif;
+	font-size: 16px;
 	color: black;
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
-	border: solid 1px black;
+	width: 900px;
+	height: auto;
 }
 
 h1
 {
-	text-align: left;
-	padding-left: 0px;
-	/*text-shadow: 2px 2px 4px black;*/
-	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 50px;
 	line-height: 30px;
 }
 
 article
 {
 	border-top: solid rgb(240, 207, 19);
-	width: 500px;
+	width: 100%;
 }
 
 td
 {
-	width: 250px;
+	width: 400px;
 	min-width: 200px;
 	vertical-align: top;
 }
@@ -82,25 +103,22 @@ td
 ul
 {
 	color: rgb(240, 207, 19);
+	padding-left: 20px;
 }
 .gauche
 {
 	display: flex;
 	flex-direction: column;
-	font-size: 10px;
+	font-size: 15px;
 	background-color: rgb(240, 207, 19);
-	margin-right: 5px;
-	/*height: 1080px;
-	min-width: 200px;
-	width: 200px;*/
+	margin-right: 40px;
+	width: 30%;
+	height: auto;
 	order: 1;
-	flex: 0.5;
-
 }
 
 .gauche h2
 {
-	text-decoration: none;
 	background-color: rgb(57,57,57);
 	color: rgb(240, 207, 19);
 	text-align: center;
@@ -108,18 +126,26 @@ ul
 
 .droite h2
 {
-	font-size : 20px;
-	text-align: left;
-	
+	margin-bottom: 5px;
+}
+
+.droite h3
+{
+	margin-bottom: 4px;
+}
+
+.droite h4
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-weight: normal;
 }
 
 .droite
 {
   display: block;
-  /*min-width: 650px;
-  width: 700px;*/
+  width: 70%;
   order: 2;
-  flex: 5;
 }
 
 .puce
@@ -134,65 +160,66 @@ ul
 
 .job
 {
-	font-size: 17px; 
+	font-size: 20px; 
 }
 
 .contact
 {
  text-align: justify;
- padding-left: 20px;
- font-size: 12px;
+ padding-left: 30px;
+ line-height: 15px;
 }
 
 .propos
 {
 	text-align: justify;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 220px;
-	font-size: 12px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 120px;
 }
 
 .divphoto
 {
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 0px;
-	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-top: 40px;
 }
 
 .photo
 {
-	border-radius: 50px 50px 50px 50px;
+	border-radius: 100%;
+	border: solid rgb(218, 175, 18) 2px;
+	width: 105px;
+	height: 105px;
 }
 
 .firstname
 {
 	color: rgb(240, 207, 19);
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 .foot
 {
-	width: 80%;
-	height: 80%;
-	border: solid 1.5px black;
-	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	
 }
 
 .muscu
 {
-	width: 80%;
-	height: 80%;
+	width: 40px;
+	height: 40px;
 	border: solid 1.5px black;
 	border-radius: 50px;
 }
 
 .xbox
 {
-	width: 80%;
-	height: 80%;
+	width: 40px;
+	height: 40px; 
 	border: solid 1.5px black;
 	border-radius: 50px;
 }
@@ -222,29 +249,35 @@ ul
 .LR
 {
 	color: black;
+	font-weight: bold;
 }
 
 .reco
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	border-top: solid rgb(240, 207, 19);
 }
 
 .reco2
 {
-	min-width: 200px;
-	padding-top: 10px;
-	line-height: 15px;
+	margin-top: 20px;
 }
 
-.loisirs
+.reco3
 {
-	display: flex;
-	justify-content: space-around;
+	margin-top: 20px;
+	margin-left: 150px;
 }
 
 .mentor
 {
-	margin-bottom: 0px;
+	font-weight: bold;
 }
+.loisirs
+{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
